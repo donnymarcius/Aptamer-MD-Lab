@@ -1,4 +1,4 @@
-title                   = Protein-ligand complex NVT equilibration 
+title                   = Protein-DNA complex NVT equilibration 
 define                  = -DPOSRES  ; position restrain the protein and ligand
 ; Run parameters
 integrator              = md        ; leap-frog integrator

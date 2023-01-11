@@ -1,4 +1,4 @@
-title                   = Protein-ligand complex NVT equilibration 
+title                   = Protein NVT equilibration 
 define                  = -DPOSRES  ; position restrain the protein and ligand
 ; Run parameters
 integrator              = md        ; leap-frog integrator
@@ -32,7 +32,7 @@ fourierspacing          = 0.16      ; grid spacing for FFT
 tcoupl                  = V-rescale                     ; modified Berendsen thermostat
 tc-grps                 = Protein Water_and_ions    ; two coupling groups - more accurate
 tau_t                   = 0.1   0.1                     ; time constant, in ps
-ref_t                   = 310   310                     ; reference temperature, one for each group, in K
+ref_t                   = 298   298                     ; reference temperature, one for each group, in K
 ; Pressure coupling
 pcoupl                  = no        ; no pressure coupling in NVT
 ; Periodic boundary conditions
